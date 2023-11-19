@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using LantekCodingChallenge.Models.ViewModels
+@model HomeViewModel
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Manufacturer</th>
+            <th>Cutting technology</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.CuttingMachines != null)
+        {
+            @foreach (var cuttingMachine in Model.CuttingMachines)
+            {
+                <tr>
+                    <td>@cuttingMachine.Name</td>
+                    <td>@cuttingMachine.Manufacturer</td>
+                    <td>@cuttingMachine.CuttingTechnology</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td class="text-center" colspan="3">No Data</td>
+            </tr>
+        }
+    </tbody>
+</table>
