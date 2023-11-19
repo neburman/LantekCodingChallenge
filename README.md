@@ -100,11 +100,22 @@ Please answer the following questions in a markdown file called Answers to techn
 
 1. How long did you spend on the coding test? What would you add to your solution if you had more time? If you didn't spend much time on the coding test, use this as an opportunity to explain what you would add.
 
-1. What was the most useful feature added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
+- I've spent around 3 hours doing the code. Without a doubt the part that has taken me the most time has been the UnitTest issue, since I had never done them before and I had to investigate how they worked and how to carry out and implement them.
 
-1. How would you track down a performance issue in production? Have you ever had to do this?
+2. What was the most useful feature added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 
-1. How would you improve the Lantek API that you just used?
+- The inclusion of readonly members
+```
+    private readonly ILogger<HomeController> _logger;
+    private readonly IConfiguration _configuration;
+```
+3. How would you track down a performance issue in production? Have you ever had to do this?
+
+- If the application is uploaded in Azure, it would generate a dashboard to see the performance statistics of the server that hosts the webapp and would also observe the response times from the server to the users.
+
+4. How would you improve the Lantek API that you just used?
+
+- Probably, what could be improved is the security aspect when accessing the API. For instance, enhancing the encryption of API credentials and modifying the authentication method.
 
 Thanks for your time. We look forward to hearing from you! If you have any questions or feedback about this coding exercise, please contact your HR representative.
 
